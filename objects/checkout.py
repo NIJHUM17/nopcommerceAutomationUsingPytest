@@ -1,7 +1,7 @@
 import time
 import locators
-import testData.registrationData
-import testData.checkoutData
+import test_data.reg_data
+import test_data.checkout_data
 
 
 class Checkout:
@@ -16,13 +16,13 @@ class Checkout:
         time.sleep(1)
 
     def billing_address(self):
-        self.driver.find_element("id", locators.country).send_keys(testData.checkoutData.country)
-        self.driver.find_element("id", locators.city).send_keys(testData.checkoutData.city)
-        self.driver.find_element("id", locators.address_1).send_keys(testData.checkoutData.address1)
-        self.driver.find_element("id", locators.address_2).send_keys(testData.checkoutData.address2)
-        self.driver.find_element("id", locators.zipcode).send_keys(testData.checkoutData.zip_code)
-        self.driver.find_element("id", locators.phone).send_keys(testData.checkoutData.phone_no)
-        self.driver.find_element("id", locators.fax).send_keys(testData.checkoutData.fax_no)
+        self.driver.find_element("id", locators.country).send_keys(test_data.checkout_data.country)
+        self.driver.find_element("id", locators.city).send_keys(test_data.checkout_data.city)
+        self.driver.find_element("id", locators.address_1).send_keys(test_data.checkout_data.address1)
+        self.driver.find_element("id", locators.address_2).send_keys(test_data.checkout_data.address2)
+        self.driver.find_element("id", locators.zipcode).send_keys(test_data.checkout_data.zip_code)
+        self.driver.find_element("id", locators.phone).send_keys(test_data.checkout_data.phone_no)
+        self.driver.find_element("id", locators.fax).send_keys(test_data.checkout_data.fax_no)
 
 
     def continue_button(self):

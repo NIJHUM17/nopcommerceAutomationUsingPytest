@@ -1,5 +1,7 @@
 import time
 import locators
+import test_data.search_data
+
 class Search:
 
     def __init__(self, driver):
@@ -11,7 +13,7 @@ class Search:
         time.sleep(3)
 
     def searchproduct(self):
-        self.driver.find_element("id",locators.search_product).send_keys(testData.searchData.productName)
+        self.driver.find_element("id",locators.search_product).send_keys(test_data.search_data.productName)
         time.sleep(1)
 
     def searchinside(self):

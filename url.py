@@ -1,2 +1,1 @@
-
-url = https://demo.nopcommerce.com/
+url = "https://demo.nopcommerce.com/"

@@ -1,10 +1,11 @@
 import time
+import url
 
 class OpenBrowser:
 
     def __init__(self, driver, config):
         self.driver = driver
-        self.webLink = config["url"]
+        self.webLink = config["https://demo.nopcommerce.com/"]
 
     def open_webBrowser(self):
         url = self.webLink

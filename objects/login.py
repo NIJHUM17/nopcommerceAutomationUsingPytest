@@ -1,8 +1,8 @@
 import time
 
 import locators
-import testData.registrationData
-import testData.loginData
+import test_data.reg_data
+import test_data.login_data
 
 
 class Login:
@@ -16,11 +16,11 @@ class Login:
         time.sleep(1)
 
     def log_email(self):
-        self.driver.find_element("id", locators.log_email).send_keys(testData.loginData.logemail)
+        self.driver.find_element("id", locators.log_email).send_keys(test_data.login_data.logemail)
         time.sleep(1)
 
     def log_password(self):
-        self.driver.find_element("id", locators.log_password).send_keys(testData.loginData.logpass)
+        self.driver.find_element("id", locators.log_password).send_keys(test_data.login_data.logpass)
         time.sleep(3)
 
     def confirmLog(self):

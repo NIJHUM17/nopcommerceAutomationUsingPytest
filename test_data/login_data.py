@@ -1,8 +1,8 @@
 #email
-import testData.registrationData
+import test_data.reg_data
 
-logemail = testData.registrationData.myemail
+logemail = test_data.reg_data.myemail
 
 #password
 
-logpass = testData.registrationData.mypass
+logpass = test_data.reg_data.mypass

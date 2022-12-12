@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.service import Service
 @pytest.fixture(scope='function')
 def config():
     cur_dir = os.path.dirname(os.path.realpath(__file__))
-    _file = os.path.abspath(cur_dir) + "\\" + "configurations\\config.ini"
+    _file = os.path.abspath(cur_dir) + "\\" + "url.py"
     parser = configparser.ConfigParser()
     parser.read(_file)
     return parser
@@ -24,3 +24,14 @@ def locator():
     parser = configparser.ConfigParser()
     parser.read(_file)
     return parser
+
+@pytest.fixture(scope='function')
+def driver():
+    cur_dir = os.path.dirname(os.path.realpath(__file__))
+    _chromedriver = os.path.abspath(cur_dir) + "\\" + "chrome_driver\\chromedriver.exe"
+    s = Service(_chromedriver)
+    driver = webdriver.Chrome(service=s)
+    driver.maximize_window()
+    driver.implicitly_wait(30)
+    yield driver
+    driver.quit()
