@@ -21,3 +21,4 @@ class Test_001_register:
         open_url.open_webBrowser()
         register.registration(register)
         assert register == "nopCommerce demo store. Register"
+        time.sleep(1)

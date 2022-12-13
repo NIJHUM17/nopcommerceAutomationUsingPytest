@@ -23,7 +23,7 @@ class Checkout:
         self.driver.find_element("id", locators.zipcode).send_keys(test_data.checkout_data.zip_code)
         self.driver.find_element("id", locators.phone).send_keys(test_data.checkout_data.phone_no)
         self.driver.find_element("id", locators.fax).send_keys(test_data.checkout_data.fax_no)
-
+        time.sleep(1)
 
     def continue_button(self):
         self.driver.find_element("xpath", locators.continue_button).click()

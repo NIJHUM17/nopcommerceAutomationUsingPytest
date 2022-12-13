@@ -21,7 +21,7 @@ class Login:
 
     def log_password(self):
         self.driver.find_element("id", locators.log_password).send_keys(test_data.login_data.logpass)
-        time.sleep(3)
+        time.sleep(4)
 
     def confirmLog(self):
         self.driver.find_element("xpath", locators.confirm_log).click()

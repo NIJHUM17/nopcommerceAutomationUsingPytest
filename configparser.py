@@ -16,15 +16,6 @@ def config():
     parser.read(_file)
     return parser
 
-
-@pytest.fixture(scope='function')
-def locator():
-    cur_dir = os.path.dirname(os.path.realpath(__file__))
-    _file = os.path.abspath(cur_dir) + "\\" + "locators.ini"
-    parser = configparser.ConfigParser()
-    parser.read(_file)
-    return parser
-
 @pytest.fixture(scope='function')
 def driver():
     cur_dir = os.path.dirname(os.path.realpath(__file__))

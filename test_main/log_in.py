@@ -18,3 +18,4 @@ class Test_002_LogIN:
         open_url.open_webBrowser()
         login.log_in(login)
         assert login.x == "nopCommerce demo store"
+        time.sleep(1)

@@ -6,10 +6,13 @@ import test_data.reg_data
 class Registration:
 
     def __init__(self, driver):
-        self.driver = driver
+
+    self.driver = driver
 
     def registration(self):
+
         time.sleep(2)
+
         self.driver.find_element("xpath", locators.registration).click()
 
     def gender(self):
