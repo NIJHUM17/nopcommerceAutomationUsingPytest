@@ -16,5 +16,5 @@ class Test_002_LogIN:
         open_url = OpenBrowser(driver, config)
         login = Login(driver, locator)
         open_url.open_webBrowser()
-        login.log_in(email=email, log=self.log)
+        login.log_in(login)
         assert login.x == "nopCommerce demo store"

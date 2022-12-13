@@ -19,5 +19,5 @@ class Test_001_register:
         open_url = OpenBrowser(driver, config)
         register = Registration(driver, locator)
         open_url.open_webBrowser()
-        register.registration(email, self.reg)
-        assert register.x == "nopCommerce demo store. Register"
+        register.registration(register)
+        assert register == "nopCommerce demo store. Register"
