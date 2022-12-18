@@ -1,8 +1,6 @@
-import configparser
+import url
 import os
-import random
 import string
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -12,7 +10,7 @@ from selenium.webdriver.chrome.service import Service
 def config():
     cur_dir = os.path.dirname(os.path.realpath(__file__))
     _file = os.path.abspath(cur_dir) + "\\" + "url.py"
-    parser = configparser.ConfigParser()
+    parser = url
     parser.read(_file)
     return parser
 

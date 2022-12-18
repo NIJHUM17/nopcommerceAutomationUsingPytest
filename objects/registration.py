@@ -6,8 +6,9 @@ import test_data.reg_data
 class Registration:
 
     def __init__(self, driver):
+        self.driver = driver
 
-    self.driver = driver
+
 
     def registration(self):
 
