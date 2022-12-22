@@ -1,2 +1,0 @@
-#search
-productName = "Apple MacBook"
