@@ -68,7 +68,7 @@ class Test_3:
 class Test_4:
 #cart
     test_data = Data()
-    testData = ttest_data.data()
+    testData = test_data.data()
     log = ast.literal_eval(testData['TEST_DATA']['login_data'])
     search = ast.literal_eval(testData['TEST_DATA']['search_data'])
 
