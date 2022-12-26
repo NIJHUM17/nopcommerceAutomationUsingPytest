@@ -32,6 +32,6 @@ def driver():
     s = Service(_chromedriver)
     driver = webdriver.Chrome(service=s)
     driver.maximize_window()
-    driver.implicitly_wait(30)
+    driver.implicitly_wait(20)
     driver.quit()
 
