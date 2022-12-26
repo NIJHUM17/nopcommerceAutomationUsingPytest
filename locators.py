@@ -1,4 +1,5 @@
 '''
+
 #reg
 registration = "//a[@class = 'ico-register']"
 gender = "//input[@id='gender-female']"
