@@ -1,5 +1,4 @@
-[LOCATORS]
-
+'''
 #reg
 registration = "//a[@class = 'ico-register']"
 gender = "//input[@id='gender-female']"
@@ -47,3 +46,4 @@ payment_method = "//button[@class = 'button-1 payment-method-next-step-button']"
 payment_info = "//button[@class = 'button-1 payment-info-next-step-button']"
 confirm_order = "//button[@class = 'button-1 confirm-order-next-step-button']"
 order_complete = "//button[@class='button-1 order-completed-continue-button']"
+'''

@@ -1,7 +1,6 @@
 import configparser
 import os
-import random
-import string
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
