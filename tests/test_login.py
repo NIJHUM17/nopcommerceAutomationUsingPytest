@@ -3,7 +3,7 @@ import ast
 
 from object.login import Login
 from object.openBrowser import OpenBrowser
-from datareader import Data
+from data_reader import Data
 
 
 class Test_2_Login:

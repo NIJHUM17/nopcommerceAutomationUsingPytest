@@ -1,4 +1,3 @@
-
 class Login:
 
     def __init__(self, driver, locator):

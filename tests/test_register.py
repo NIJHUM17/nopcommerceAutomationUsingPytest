@@ -4,7 +4,7 @@ import pytest
 
 from object.openBrowser import OpenBrowser
 from object.register import Register
-from datareader import Data
+from data_reader import Data
 
 
 class Test_1_Register:
