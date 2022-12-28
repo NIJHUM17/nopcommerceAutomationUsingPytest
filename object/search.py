@@ -14,3 +14,4 @@ class Search:
         time.sleep(2)
         self.driver.find_element("xpath", self.search_click).click()
         self.driver.find_element("xpath", self.product).click()
+        time.sleep(3)

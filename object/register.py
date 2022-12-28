@@ -1,3 +1,4 @@
+import time
 class Register:
 
     def __init__(self, driver, locator):
@@ -17,18 +18,28 @@ class Register:
         self.continue_ = locator["LOCATORS"]["continue_"]
 
     def registration(self, reg):
+        time.sleep(1)
         self.driver.find_element("xpath", self.reg).click()
         self.driver.find_element("xpath", self.gender).click()
+        time.sleep(1)
 
         self.driver.find_element("id", self.first_name).send_keys(reg['firstName'])
         self.driver.find_element("id", self.last_name).send_keys(reg['lastName'])
+        time.sleep(1)
 
         self.driver.find_element("name", self.date_of_birth).send_keys(reg['date'])
         self.driver.find_element("name", self.month_of_birth).send_keys(reg['month'])
         self.driver.find_element("name", self.year_of_birth).send_keys(reg['year'])
+        time.sleep(1)
+
         self.driver.find_element("id", self.email).send_keys(reg['email'])
         self.driver.find_element("id", self.company).send_keys(reg['company'])
+        time.sleep(1)
+
         self.driver.find_element("id", self.password).send_keys(reg['password'])
         self.driver.find_element("id", self.confirm_password).send_keys(reg['password'])
+        time.sleep(1)
+
         self.driver.find_element("xpath", self.confirm_reg).click()
         self.driver.find_element("xpath", self.continue_).click()
+        time.sleep(3)
